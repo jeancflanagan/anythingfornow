@@ -1,6 +1,5 @@
 ###### TODO replace these defaults; add a site description
 title: Anything For Now
-url: http://anythingfornow.com
 timezone: America/New_York
 
 license:
@@ -29,14 +28,13 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-###### TODO choose a URL structure for posts
 ## Permalink configuration
 permalink: /:year/:month/:title/
 
 collections:
   objects:
     title: Objects
-    output: true
+    output: false
   posts:
     title: Posts
     output: true
@@ -54,6 +52,14 @@ defaults:
       image:
         - alt: ''
           asset: ''
+  -
+  scope:
+    path: ''
+    type: 'objects'
+  values:
+    image:
+      - alt: ''
+        asset: ''
 
 ## Sass configuration
 sass:
