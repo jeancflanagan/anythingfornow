@@ -17,6 +17,7 @@ script:
   - if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "siteleaf" ]; then npm run prod; fi
 
 notifications:
+  email: false
   slack:
     secure: E6v23dyfprvccrIfbeoBw//NhGB6bKEbedZTujD/sgWoZTVa1fqI3z4wLvS8JLFa8b8F7rCskAwgQkd05FKuJ09KtiwrXw1iTCcdb6h3z1HF5PVMAjJCQTikvvtBwqm5RjloOX8Qwm6Mtldu5KpDem9r06o+HTpTbp+B4S1EfPbCVzvyCJlpp0lTM0mwUUVvYMs+qqCq4W/LT9y2bhN0ZOMV8AArh5axbwXLnjZTtTpSN2j8pTebif+k6lNdG6Rn9kRubMPCGcI7EsnxoKik9iM6Cp95Bw2NAhFTs78bQnKWB/cq+QrknKAIg/7CfkJpSserwaELsWeq6XEgyC4VAZPZi+59AnGYauL/irWe3+hGZgPkIWtz6w2CW2P522OO1vjAg7UByjC0tOq628JrFZqgwQMHMPskMOnz7zorpy8niRE6vr7MJkkM5U8gMrt97L6DtCKZxx41qslTbuCi1eeTl1/y2ffE1h1ML0ttCoOPP95bN64ejOPZYcerytXtmIDmVi6Z3ciRkcrtbkYZGjSbynB4WppiQncoSAjCyR1huGI+FwD8m1CiUA0MKLeXBhtb9KSFwdAYuHDw0b/iJtXapuyQA0xLrgI/8XfbNeFZ6kPsEKUCJSTbtVD9mK7rvXrYVHS+F1a9LChSHQ8U8Rvm1jwmb4NAJW7NTyRX3qc=
 
