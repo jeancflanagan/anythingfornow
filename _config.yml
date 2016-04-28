@@ -75,7 +75,7 @@ exclude:
 domain: 'anythingfornow.com'
 url: 'http://anythingfornow.com'
 patterns_url: /patterns
-image_url: /images
+image_url: /uploads
 icon_url: /icons
 resources_url: /resources
 
