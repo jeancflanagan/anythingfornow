@@ -8,8 +8,8 @@ tags:
 unique_id: 2016-04-24:indian-grave-ridge
 updated: 2016-04-25 00:00:00.000000000 Z
 image:
-- alt: ""
-  asset: ""
+- alt: ''
+  asset: ''
 layout: post
 ---
 
