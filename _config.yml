@@ -1,0 +1,11 @@
+---
+title: Anything for Now
+url: http://anythingfornow.com
+timezone: America/New_York
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
