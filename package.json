@@ -1,0 +1,39 @@
+{
+  "name": "anythingfornow",
+  "description": "NPM development setup built from Jekyll Basis",
+  "dependencies": {
+    "browserify": "^13.0.0",
+    "npm-run-all": "^1.5.1",
+    "s3-cli": "^0.13.0",
+    "svgo": "^0.6.1",
+    "uglify-js": "~2.6",
+    "watchify": "^3.7.0"
+  },
+  "scripts": {
+    "serve:watch": "watchify _source/js/site.js -o resources/site.js",
+    "serve:jekyll": "bundle exec jekyll serve",
+    "dev:js": "browserify _source/js/site.js -o resources/site.js",
+    "dev:jekyll": "bundle exec jekyll build",
+    "dev:svg": "svgo -q -f _site/icons _site/images",
+    "dev:deploy": "s3-cli sync --delete-removed _site/ s3://dev.anythingfornow.com/",
+    "prod:js": "browserify _source/js/site.js | uglifyjs --comments -o resources/site.js",
+    "prod:jekyll": "JEKYLL_ENV=production bundle exec jekyll build",
+    "prod:svg": "svgo -q -f _site/icons _site/images",
+    "prod:deploy": "DEPLOY=production s3-cli sync --delete-removed _site/ s3://anythingfornow.com/",
+    "start": "npm-run-all --parallel serve:*",
+    "dev": "npm-run-all dev:*",
+    "test": "htmlproofer ./_site",
+    "prod": "npm-run-all prod:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opattison/jekyll-begin.git"
+  },
+  "author": "Oliver Pattison",
+  "license": "UNLICENSED",
+  "private": "true",
+  "bugs": {
+    "url": "https://github.com/opattison/jekyll-begin/issues"
+  },
+  "homepage": "https://github.com/opattison/jekyll-begin#readme"
+}

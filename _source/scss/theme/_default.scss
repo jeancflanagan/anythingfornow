@@ -1,0 +1,23 @@
+$back: $white;
+$fore: $black;
+$accent: $blue;
+$link: $blue;
+$link--hover: $red;
+
+html {
+  color: $fore;
+}
+
+body {
+  background-color: $back;
+  color: $fore;
+}
+
+a {
+  color: $link;
+}
+
+a:hover,
+a:focus {
+  color: $link--hover;
+}
