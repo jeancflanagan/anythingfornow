@@ -1,11 +1,84 @@
----
-title: Anything for Now
+###### TODO replace these defaults; add a site description
+title: Anything For Now
 url: http://anythingfornow.com
 timezone: America/New_York
+
+license:
+  short: 'CC BY-NC 4.0'
+  long: 'Creative Commons Attribution-NonCommercial 4.0 International'
+
+# Content
+
+## Referenced URLs (internal and external links for inline use)
+link:
+  attribution: http://creativecommons.org/licenses/by-nc/4.0/
+  subscribe:
+    full: /full.xml
+
+# Site configuration
+
+## Gems configuration
+gems:
+  - sass
+  - jekyll/imgix
+
+## Markdown configuration
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+###### TODO choose a URL structure for posts
+## Permalink configuration
+permalink: /:year/:month/:title/
+
 collections:
+  objects:
+    title: Objects
+    output: true
   posts:
     title: Posts
     output: true
   uploads:
     title: Uploads
     output: true
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+      layout: 'post'
+      image:
+        - alt: ''
+          asset: ''
+
+## Sass configuration
+sass:
+  sass_dir: _source/scss
+  style: compressed
+
+## Project configuration
+include:
+  - _feeds
+  - _pages
+
+exclude:
+  - _config
+  - Gemfile*
+  - node_modules
+  - package.json
+
+## Configuration URLs
+domain: 'anythingfornow.com'
+url: 'http://anythingfornow.com'
+patterns_url: /patterns
+image_url: /images
+icon_url: /icons
+resources_url: /resources
+
+###### TODO https://www.google.com/webmasters/verification
+## Google site verification
+google_verification: ''
