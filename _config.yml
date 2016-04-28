@@ -53,13 +53,13 @@ defaults:
         - alt: ''
           asset: ''
   -
-  scope:
-    path: ''
-    type: 'objects'
-  values:
-    image:
-      - alt: ''
-        asset: ''
+    scope:
+      path: ''
+      type: 'objects'
+    values:
+      image:
+        - alt: ''
+          asset: ''
 
 ## Sass configuration
 sass:
