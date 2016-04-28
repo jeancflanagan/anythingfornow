@@ -1,0 +1,27 @@
+language: ruby
+rvm:
+  - 2.3.1
+
+cache:
+  bundler: true
+  directories:
+    - node_modules
+
+install:
+  - bundle install
+  - npm install
+
+script:
+  - npm run dev
+  - npm test
+  - if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "siteleaf" ]; then npm run prod; fi
+
+notifications:
+  email: false
+  slack:
+    secure: E6v23dyfprvccrIfbeoBw//NhGB6bKEbedZTujD/sgWoZTVa1fqI3z4wLvS8JLFa8b8F7rCskAwgQkd05FKuJ09KtiwrXw1iTCcdb6h3z1HF5PVMAjJCQTikvvtBwqm5RjloOX8Qwm6Mtldu5KpDem9r06o+HTpTbp+B4S1EfPbCVzvyCJlpp0lTM0mwUUVvYMs+qqCq4W/LT9y2bhN0ZOMV8AArh5axbwXLnjZTtTpSN2j8pTebif+k6lNdG6Rn9kRubMPCGcI7EsnxoKik9iM6Cp95Bw2NAhFTs78bQnKWB/cq+QrknKAIg/7CfkJpSserwaELsWeq6XEgyC4VAZPZi+59AnGYauL/irWe3+hGZgPkIWtz6w2CW2P522OO1vjAg7UByjC0tOq628JrFZqgwQMHMPskMOnz7zorpy8niRE6vr7MJkkM5U8gMrt97L6DtCKZxx41qslTbuCi1eeTl1/y2ffE1h1ML0ttCoOPP95bN64ejOPZYcerytXtmIDmVi6Z3ciRkcrtbkYZGjSbynB4WppiQncoSAjCyR1huGI+FwD8m1CiUA0MKLeXBhtb9KSFwdAYuHDw0b/iJtXapuyQA0xLrgI/8XfbNeFZ6kPsEKUCJSTbtVD9mK7rvXrYVHS+F1a9LChSHQ8U8Rvm1jwmb4NAJW7NTyRX3qc=
+
+env:
+  global:
+    - secure: n0QXiWBBc087B3HAsnyIhqNv6J8o2ToJ3SlUA4E2KHpGkrhNMmxeTY7PD/VscJrqEIWrJobsfBeGt945CxCB2JFcdhWFAJLYO6EVjGuyP5cFaw7t06hi+WaboUJLNd7y4ypE8Jl+rZfhMqYqiadqho5tyP5iNdXDMbG1hzZTbgBaPJnA3RiFDCgGRO5ehNwhpz9D0z0PiQ+68ZmteeH5rPt3tMr5TO+BKVr/bldDm2d2Mw+2A6hFEieXDxU34tVzurrnle5NQ0pft3nD894ZRJANyYJL70NIcYAS7crMPKDhQrtY1efHZKW5WeeO4JBv7hJK2c+AmgIGBe26fGMODU9z2CFhFkotbpw6/wyThkAo/6OkbVzGZAw1HJBwFDztYhEbtFBPy//qrAOySXNW11+buxXfXXNPCfRuzkERMsx0jaxc+bNfRUd1CnDVjGC9+2DJON8foAZCxsozX5UWn5+8E76TT2wDSg4WqARr3z16uRQhQPVfc3CY0vWyhWkHiQiBVjkJZhhckqtZPs25ddlXb73zAdn74FV0HUYL25vy45W1P7HyJN2QdxXY9Sgjm4V0cDUjsE/PBX/hhg3vQ00HVu+5Mml9A6B6EtMscF2Ijqh0MIIq4w/9iib7i8uZIcH3qy1jsw8tPwhh1TjgKmc2DsnB4smppdYuLf2RQis=
+    - secure: v8d1nIz6+903RreRuCXun1ohah17iEXpvNyB1upS9kHOpf00Jhsi0n8JCebkcdhFIQuEX1qjbrUVC7OuxwJgmcIX/7S7ys+ZF8GTw2kK6m1FAm7Kehhgqf4uiuFmbz5KLAap4hTU88dZsK4TfmB4NIKJvOW8N5xdp+PTWNCFOJELXdDcpAYKX9/+HatoGqfRmtFWQrvn6fA+NrdVjYHRQTI99Dd8Gi7h/QEuR6ZkE9ACkw0xAANXMHryhcwJsZfQoozphigXYy2moqDbjFbXwbLEQDNkizn0eY64E+ob2qiAftQSKjkx77I8RFYieJqPyTRbT9ywtnLEU/teqHhhFb/OiSA9SkIK5F3hlVdrUYqdKdUW0diDsmGWuDiu5Kvo6dztvEchICcWh++RSNJh+kRPYLxHh6J6JPBXSesw2NtsQHO2NIowdXsl6oQ5f8Ww+6kzNjG2ee8PFsbFEZCkWcAIHrnfjGAfxEavgLddWhKwr3q2M/X45HAdqmBSkHmgyo5fFMHXX7w9ScT67IibG2cM0nmDxGebAnsEVcSgQqGgXy+/nWi13vL0yDKADXaNmpi+m63oTow/p/gjTc+7RHaLMuiumsuntgJrSnffYATHOJpkx2Z4MmeINS/fXEDSSTfi1KM0W8UP4VT1/LblZOeAef8Gf6lDfGza3jwdexk=
