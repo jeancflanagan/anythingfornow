@@ -1,4 +1,4 @@
-###### TODO replace these defaults; add a site description
+###### TODO add a site description
 title: Anything For Now
 timezone: America/New_York
 
@@ -52,6 +52,8 @@ defaults:
       type: 'posts'
     values:
       layout: 'post'
+      unique_id: ''
+      author: ''
       image:
         - alt: ''
           asset: ''
@@ -75,7 +77,6 @@ include:
   - _pages
 
 exclude:
-  - _config
   - Gemfile*
   - node_modules
   - package.json

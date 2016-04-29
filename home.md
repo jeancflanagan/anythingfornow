@@ -1,7 +1,7 @@
 ---
 title: Home
 permalink: "/"
-layout: default
+layout: index
 ---
 
 <h1 class="index-title">{{ site.title }}</h1>
