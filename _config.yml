@@ -32,6 +32,9 @@ kramdown:
 permalink: /:year/:month/:title/
 
 collections:
+  authors:
+    title: Authors
+    output: false
   objects:
     title: Objects
     output: false
