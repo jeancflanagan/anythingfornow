@@ -52,6 +52,8 @@ defaults:
       type: 'posts'
     values:
       layout: 'post'
+      unique_id: ''
+      author: ''
       image:
         - alt: ''
           asset: ''
