@@ -49,7 +49,7 @@ highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-permalink: "/:year/:month/:title/"
+permalink: "/:year-:month-:day-:title/"
 sass:
   sass_dir: _source/scss
   style: compressed
