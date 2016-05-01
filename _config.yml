@@ -67,11 +67,11 @@ icon_url: "/icons"
 resources_url: "/resources"
 jekyll-archives:
   enabled:
-    - year
-    - month
-    - tags
-  layout: 'archive'
+  - year
+  - month
+  - tags
+  layout: archive
   permalinks:
-    year: '/:year/'
-    month: '/:year/:month/'
-    tag: '/tag/:name/'
+    year: "/:year/"
+    month: "/:year/:month/"
+    tag: "/tag/:name/"
