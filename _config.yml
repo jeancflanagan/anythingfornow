@@ -43,12 +43,13 @@ link:
 gems:
 - sass
 - jekyll/imgix
+- jekyll-archives
 markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-permalink: "/:year/:month/:title/"
+permalink: "/:year-:month-:day-:title/"
 sass:
   sass_dir: _source/scss
   style: compressed
@@ -64,4 +65,13 @@ patterns_url: "/patterns"
 image_url: "/uploads"
 icon_url: "/icons"
 resources_url: "/resources"
-google_verification: 
+jekyll-archives:
+  enabled:
+    - year
+    - month
+    - tags
+  layout: 'archive'
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    tag: '/tag/:name/'
