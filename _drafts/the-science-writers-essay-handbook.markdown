@@ -4,6 +4,8 @@ date: 2016-04-30 21:11:00 -04:00
 tags:
 - writing
 - science
+unique_id: 2016-04-30:the-science-writers-essay-handbook
+author: Jean
 ---
 
 [Michelle Nijhuis](http://www.michellenijhuis.com/) has written a beautiful and concise [guide to the science essay](http://www.amazon.com/Science-Writers-Essay-Handbook-Compelling/dp/0692654666/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=).
