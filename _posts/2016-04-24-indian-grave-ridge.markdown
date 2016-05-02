@@ -6,10 +6,8 @@ tags:
 - virginia
 - dog
 unique_id: 2016-04-24:indian-grave-ridge
+author: Jean
 updated: 2016-04-25 00:00:00.000000000 Z
-image:
-- alt: ''
-  asset: ''
 layout: post
 ---
 
