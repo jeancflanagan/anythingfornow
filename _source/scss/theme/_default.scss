@@ -3,6 +3,7 @@ $fore: $black;
 $accent: $blue;
 $link: $blue;
 $link--hover: $red;
+$blockquote: $lightgray;
 
 html {
   color: $fore;
@@ -20,4 +21,8 @@ a {
 a:hover,
 a:focus {
   color: $link--hover;
+}
+
+blockquote {
+  background-color: $blockquote;
 }
