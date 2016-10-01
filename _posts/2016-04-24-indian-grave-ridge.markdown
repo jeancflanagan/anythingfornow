@@ -7,7 +7,10 @@ tags:
 - dog
 unique_id: 2016-04-24:indian-grave-ridge
 author: Jean
-updated: 2016-04-25 00:00:00.000000000 Z
+image:
+- alt: example alt text
+  asset: "/uploads/image-1024x683.png"
+updated: 2016-09-30 20:00:00 -04:00
 layout: post
 ---
 
