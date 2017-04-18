@@ -14,7 +14,7 @@ install:
 script:
   - npm run dev
   - npm test
-  - if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "siteleaf" ]; then npm run prod; fi
+  - if [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ "$TRAVIS_BRANCH" == "live" ]; then npm run prod; fi
 
 notifications:
   email: false
